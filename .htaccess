@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Si se accede directamente a /andon sin archivo (como index.php)
+RewriteCond %{REQUEST_URI} ^/andon/?$
+RewriteRule ^.*$ /andon/login.php [R=302,L]

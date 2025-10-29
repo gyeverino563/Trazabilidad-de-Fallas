@@ -1,0 +1,133 @@
+/* Body y fondo */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* define la tipografía. Si el navegador no tiene Arial, usa Helvetica y, si no, cualquier sans-serif. */
+    background: linear-gradient(135deg, #60a3a8, #0d2c63); /* fondo con gradiente diagonal (de color aguamarina a azul oscuro). Buena elección para un look moderno. */
+    color: #fff; /* color de texto por defecto blanco, que se aplicará a todo el contenido del body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*display: flex; justify-content: center; align-items: center; → convierte el body en un contenedor flex centrando su contenido horizontal y verticalmente. 
+    Esto centra .form-wrapper.
+    */
+    padding-top: 1px; /*un pequeño padding arriba (no aporta mucho; se puede eliminar). */
+    min-height: 100vh; /*asegura que el body ocupe toda la altura de la ventana (viewport), permitiendo el centrado vertical. */
+    margin: 0;  /* quita los márgenes por defecto del navegador en body. */
+}
+
+/* Contenedor principal */
+.form-wrapper {
+    background: rgba(255, 255, 255, 0.05); /*caja semi-transparente sobre el gradiente; muy elegante. */
+    padding: 120px 160px; /*espaciado interior grande arriba/abajo (120px) y a los lados (160px). Esto hace el layout aireado, pero puede causar problemas en pantallas pequeñas (demasiado padding). */
+    border-radius: 16px; /*esquinas redondeadas. */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+    width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Para que los elementos estén en columna */
+}
+
+/* Encabezado con logo */
+.form-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.form-header img {
+    width: 80px;
+    height: auto;
+}
+
+.form-header h2 {
+    margin: 0;
+    font-size: 30px;
+    color: #00ffd5;
+}
+
+/* Información del usuario y logout */
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.user-info p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logout {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.logout:hover {
+    background-color: #ff4c4c;
+}
+
+/* Formulario */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: left;
+}
+
+.form-container label {
+    font-weight: bold;
+    font-size: px;
+    font-size: 16px;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    margin-top: 6px;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    margin-top: 30px;
+    padding: 12px;
+    width: 30%;
+    margin-left: auto;   /* 👈 lo empuja hacia el centro */
+    margin-right: auto;  /* 👈 lo empuja hacia el centro */
+    background-color: #00f3b6;
+    color: #0d1f3c;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-container button:hover {
+    background-color: #ffffff;
+}
+
+/* Enlace para ver fallas */
+.view-fallas {
+    display: inline-block;
+    margin-top: 25px;
+    text-decoration: none;
+    color: #00ffd5;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.view-fallas:hover {
+    color: #fff;
+}

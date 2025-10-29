@@ -1,0 +1,60 @@
+/* loginstyle.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #60a3a8, #0d2c63); 
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    width: 350px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 30px;
+    color: #00ffd5;
+    font-size: 28px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 95%;
+    padding: 12px;
+    background-color: #00ffd5;
+    color: #0d1f3c;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #f8f7f3;
+}
+
+.login-container p {
+    color: #ff6b6b;
+    margin-top: 10px;
+    font-weight: bold;
+}

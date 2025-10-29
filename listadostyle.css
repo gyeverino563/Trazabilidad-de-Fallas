@@ -1,0 +1,91 @@
+/* 🎨 Fondo general */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #60a3a8, #0d2c63);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* 📦 Contenedor principal */
+.container {
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 1100px;
+}
+
+/* 🏷️ Título */
+.title {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* 🔘 Botones */
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: #1e3c72;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2a5298;
+}
+
+.logout {
+    background: #e63946;
+}
+
+.logout:hover {
+    background: #c92a3a;
+}
+
+/* 📋 Tabla */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;  /* 👈 mantiene fondo blanco */
+}
+
+.styled-table thead tr {
+    background-color: #1e3c72;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #e8f0fe;
+}
